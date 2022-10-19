@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 80rem;
+}
+
+/* <!-- header(搜尋、標籤) --> */
+
+#header-container {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#header {
+  width: 100%;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header .bread {
+  float: left;
+  text-align: center;
+  margin: auto;
+}
+
+/* 麵包 */
+#header .bread h1 {
+  padding: 8px;
+  float: left;
+  margin: 11px;
+  cursor: pointer;
+}
+
+/* youtube logo */
+#header .bread img {
+  width: 100px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+/* 中間搜尋區 */
+#header .search {
+  text-align: center;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+}
+
+/* 文字搜尋列 */
+#header .search input {
+  width: 523px;
+  height: 30px;
+  position: relative;
+  top: 50%;
+  border: 0.5px solid gray;
+  /* margin: auto; */
+  /* margin: 0; */
+}
+
+#header .button {
+  display: inline-block;
+  width: 54px;
+  height: 30px;
+  background: rgb(206, 206, 206);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(474%, -50%);
+  line-height: 30px;
+  /* margin: 0; */
+  /* padding: 1px 6px; */
+  font-size: small;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+#header .button-micro {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: rgb(227, 227, 227);
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(665%, -50%);
+  font-size: small;
+  cursor: pointer;
+}
+
+#header .log_in {
+  text-align: center;
+  position: absolute;
+  top: 23%;
+  right: 0%;
+  transform: translate(-20%, -50%);
+  /* font-size: 0; */
+}
+
+#header .dot {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/* 人頭icon */
+#header .user {
+  cursor: pointer;
+  display: inline-block;
+  color: #065FD4;
+  border: 1px solid #065FD4;
+  padding: 5px 11px;
+  font-size: 23px;
+  text-align: center;
+
+}
+
+/* 登入文字 */
+#header .user span {
+  margin: 0 0 0 8px;
+  position: relative;
+  text-align: center;
+}
+
+/* tag標籤 */
+#header2 {
+  width: calc(100% - 240px);
+  height: 56px;
+  margin: 0 240px;
+  border-color: rgba(128, 128, 128, 0.349) white;
+  border-width: 0.5px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header2 .tagrow {
+  text-align: center;
+
+}
+
+#header2 .tag {
+  height: 32px;
+  margin: 12px 12px 12px 0;
+  padding: 0 12px;
+  text-align: center;
+  display: inline-block;
+  background: rgb(235, 235, 235);
+  color: black;
+  border-radius: 16px;
+  line-height: 32px;
+}
+
+#header2 .tag:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+/* <!-- sidebar(左側欄位) --> */
+#sidebar {
+  width: 240px;
+  height: calc(100% - 56px);
+  position: fixed;
+  margin-right: 0;
+  margin: 56px 0;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  overflow-y: auto;
+  color: #656565;
+}
+
+#sidebar h2 {
+  line-height: 40px;
+  padding: 0 24px;
+}
+
+#sidebar div {
+  /* width: 240px;
+  height: 40px; */
+  padding: 0 24px;
+  line-height: 40px;
+
+}
+
+/* icon大小 */
+#sidebar i {
+  line-height: 40px;
+  margin: 0 24px 0 0;
+}
+
+/* #sidebar span {
+  margin: 1rem;
+} */
+
+#sidebar div:hover {
+  background: #c8c8c8;
+  display: block;
+  cursor: pointer;
+}
+
+/* scrollBar color */
+
+/* 捲軸底色 */
+/* #sidebar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: #ffffff00;
+} */
+
+/* 捲軸寬度 */
+#sidebar::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* 捲軸本體顏色 */
+/* #sidebar::-webkit-scrollbar-thumb {
+  background-color: #ffffff00;
+} */
+
+/* 捲軸本體顏色 */
+#sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #8d8d8d4e;
+  border-radius: 10px;
+}
+
+
+/* <!-- content(中間影片區) --> */
+
+#content {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  padding: 1rem 0 0 0;
+  position: absolute;
+  top: 112px;
+}
+
+#content .row {
+  width: 100%;
+  margin: auto;
+}
+
+#content .col {
+  float: left;
+  width: 25%;
+  /* 要問老師!!! */
+  position: relative;
+  /* margin: 0 1.5rem; */
+
+}
+
+#content .col .card {
+  background-color: rgb(255, 255, 255);
+  width: 348px;
+  height: 336px;
+  margin: 0 12px;
+}
+
+/*影片大圖 */
+#content .card-head img {
+  width: 348px;
+  height: 195px;
+}
+
+.disc {
+  position: relative;
+}
+
+
+
+/* 頭像 */
+#content .channel img {
+  width: 36px;
+  height: 36px;
+  margin: 12px 12px 0 0;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* 影片標題 */
+#content .card-body {
+  width: 90%;
+  position: absolute;
+  top: 12px;
+  left: 50px;
+}
+
+#content .card-body .title {
+  font-weight: 500;
+  font-size: 18.5px;
+}
+
+#content .card-body .text {
+  /* border: #065FD4 solid 1px; */
+  color: #606060;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0.3rem 0 0 0;
+  line-height: 20px;
+}
+
+/* 卡片動畫 */
+#content .col:hover {
+  transform: scale(1.15);
+  transform-origin: top center;
+  display: block;
+  animation-delay: 2s;
+  z-index: 1;
+}
+
+/* 每一排第一個從左邊跳出來 */
+#content .row .col:nth-child(4n+1):hover {
+  transform: scale(1.15);
+  transform-origin: 0 0;
+  display: block;
+  animation-delay: 2s;
+  z-index: 100;
+}
+
+/* 每一排第四個從右邊跳出來 */
+#content .row .col:nth-child(4n):hover {
+  transform: scale(1.15);
+  transform-origin: 100% 0;
+  display: block;
+  animation-delay: 2s;
+}
+
+#content .card-footer {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  text-align: center;
+  /* padding: 10px 0; */
+}
+
+
+/* 喜歡的影片、待播清單 */
+#content .card-footer .btn {
+  display: none;
+  /* display: inline-block; */
+  text-decoration: none;
+  border: 0;
+  padding: 0.3rem 1.2rem;
+  color: #656565;
+}
+
+#content .col:hover .btn {
+  display: inline-block;
+  background-color: #dbdbdb;
+}
